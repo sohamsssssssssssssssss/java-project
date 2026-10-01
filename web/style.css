@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 24px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+.status {
+    background: #1f2937;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #22c55e;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+main {
+    width: 86%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+}
+
+.stat-card span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.panel,
+.parking-section {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.panel h2,
+.parking-section h2 {
+    margin-bottom: 6px;
+}
+
+.panel p,
+.parking-section p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 15px 0 7px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.exit-button {
+    background: #111827;
+}
+
+.exit-button:hover {
+    background: #000000;
+}
+
+.price-box {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.price-box div {
+    flex: 1;
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+.price-box span {
+    display: block;
+    color: #6b7280;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.legend {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.legend i {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.available-dot {
+    background: #22c55e;
+}
+
+.occupied-dot {
+    background: #ef4444;
+}
+
+.parking-section h3 {
+    margin: 20px 0 12px;
+    font-size: 15px;
+}
+
+.slot-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.slot {
+    padding: 24px 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid;
+}
+
+.slot.available {
+    background: #f0fdf4;
+    color: #15803d;
+    border-color: #86efac;
+}
+
+.slot.occupied {
+    background: #fef2f2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+.message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1d4ed8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+@media (max-width: 750px) {
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .actions {
+        grid-template-columns: 1fr;
+    }
+
+    .slot-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        display: block;
+    }
+
+    .legend {
+        margin-bottom: 15px;
+    }
+}

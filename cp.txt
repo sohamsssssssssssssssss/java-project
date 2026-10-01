@@ -1,0 +1,1 @@
+/Users/soham/.m2/repository/com/mysql/mysql-connector-j/9.5.0/mysql-connector-j-9.5.0.jar:/Users/soham/.m2/repository/com/google/protobuf/protobuf-java/4.31.1/protobuf-java-4.31.1.jar
